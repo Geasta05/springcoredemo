@@ -11,9 +11,9 @@ public class DemoController {
 
     private Coach myCoach;
 
-    //with @Autowired annotation, any method can act as a setter injector (not just setters)
+
     @Autowired
-    public DemoController(@Qualifier("baseballCoach") Coach theCoach) {
+    public DemoController(Coach theCoach) {
         myCoach = theCoach;
     }
 
