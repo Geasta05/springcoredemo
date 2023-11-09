@@ -10,16 +10,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class CricketCoach implements Coach {
 
-    @PostConstruct
-    public void doMyStartup() {
-        System.out.println("In doMyStartup(): " + getClass().getSimpleName());
-    }
-
-    @PreDestroy
-    public void doMyCleanup() {
-        System.out.println("In doMyCleanup(): " + getClass().getSimpleName());
-    }
-    // DESTRUCTION LIFECYCLE CALLBACKS ARE NOT CALLED ON PROTOTYPE BEANS - CLIENT CODE MUST CLEAN UP PROTOTYPE BEANS
 
     @Override
     public String getDailyWorkout() {
