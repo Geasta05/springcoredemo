@@ -1,5 +1,6 @@
-package geasta05.springcoredemo;
+package geasta05.springcoredemo.common;
 
+import geasta05.springcoredemo.common.Coach;
 import org.springframework.stereotype.Component;
 
 @Component
